@@ -1,0 +1,16 @@
+metadata:
+  # Add custom information about the file, such as:
+  #   author: "Creator's name"
+  #   created-date: "YYYY-MM-DD"
+  #   project-name: "Project name"
+  symbol-palette-name: SVG Palette
+
+svg-palette:
+  - id: cultivated-land-pattern
+    file: "../data/images/cultivated-land-pattern.svg"
+  - id: sandy-ground-pattern
+    file: "../data/images/sandy-ground-pattern.svg"
+  - id: boulder-field-pattern 
+    file: "../data/images/boulder-field-pattern.svg"
+  - id: marsh-pattern
+    file: "../data/images/marsh-pattern.svg"

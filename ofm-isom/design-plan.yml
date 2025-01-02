@@ -1,0 +1,328 @@
+metadata:
+  # Add custom information about the file, such as:
+  #   author: "Creator's name"
+  #   created-date: "YYYY-MM-DD"
+  #   project-name: "Project name"
+  design-plan-name: "Design Plan"
+
+sources:
+  ofm:
+    type: vector
+    url: https://tiles.openfreemap.org/planet
+  contour-source:
+    type: vector
+    tiles:
+      - dem-contour://{z}/{x}/{y}?buffer=1&contourLayer=contours&elevationKey=ele&extent=4096&levelKey=level&thresholds=13*5*25~12*10*50~11*50*250~10*100*500~2*200*1000~1*400*2000
+
+rules:
+  - symbol_id:
+      - background
+    links:
+      - source: 
+      - source-layer:
+  - symbol_id:
+      - 101
+    links:
+      - source: contour-source
+        source-layer: contours
+  - symbol_id:
+      - 208
+    links:
+      - source: ofm
+        source-layer: landcover
+        filter:
+          - all
+          - - in
+            - class
+            - rock
+          - - in
+            - subclass
+            - scree
+  - symbol_id:
+      - 213
+    links:
+      - source: ofm
+        source-layer: landcover
+        filter:
+          - in
+          - class
+          - sand
+  - symbol_id:
+      - 301
+    links:
+      - source: ofm
+        source-layer: water
+  - symbol_id:
+      - 301-1
+    links:
+  - symbol_id:
+      - 304-river
+    links:
+      - source: ofm
+        source-layer: waterway
+        filter:
+          - all
+          - - "!in"
+            - brunnel
+            - tunnel
+          - - "in"
+            - class
+            - river
+  - symbol_id:
+      - 304-stream
+    links:
+      - source: ofm
+        source-layer: waterway
+        filter:
+          - all
+          - - "!in"
+            - brunnel
+            - tunnel
+          - - in
+            - class
+            - stream
+            - canal
+  - symbol_id:
+      - 307
+    links:
+      - source: ofm
+        source-layer: landcover
+        filter:
+          - in
+          - class
+          - wetland
+          - marsh
+  - symbol_id:
+      - 401
+    links:
+      - source: ofm
+        source-layer: landcover
+        filter:
+          - all
+          - - in
+            - class
+            - meadow
+          - - '!='
+            - subclass
+            - golf_course
+          - - '!='
+            - subclass
+            - scrub
+          - - '!='
+            - subclass
+            - park
+  - symbol_id:
+      - 403
+    links:
+    - source: ofm
+      source-layer: landcover
+      filter:
+        - in
+        - class
+        - grassland
+        - heath
+        - logging
+  - symbol_id:
+      - 405
+    links:
+    - source: ofm
+      source-layer: landcover
+      filter:
+        - any
+        - - in
+          - class
+          - forest
+          - wood
+          - park
+        - - in 
+          - subclass
+          - park
+  - symbol_id:
+      - 408
+    links:
+    - source: ofm
+      source-layer: landcover
+      filter:
+        - any
+        - - ==
+          - subclass
+          - scrub
+        - - ==
+          - wood:density
+          - dense
+  - symbol_id:
+      - 412
+    links:
+      - source: ofm
+        source-layer: landcover
+        filter:
+          - in
+          - class
+          - farm
+          - farmland
+  - symbol_id:
+      - 501
+    links:
+      - source: ofm
+        source-layer: landuse
+        filter:
+          - in
+          - class
+          - pitch
+          - track
+  - symbol_id: 
+      - 502-aeroway-taxiway-centerline
+      - 502-aeroway-taxiway-casing
+    links:
+      - source: ofm
+        source-layer: aeroway
+        filter:
+          - all
+          - - "=="
+            - class
+            - taxiway
+  - symbol_id:
+    - 502-aeroway-runway-centerline
+    - 502-aeroway-runway-casing
+    links:
+      - source: ofm
+        source-layer: aeroway
+        filter:
+          - all
+          - - "=="
+            - class
+            - runway
+  - symbol_id:
+    - 502-highway-minor-centerline
+    - 502-highway-minor-casing
+    links:
+      - source: ofm
+        source-layer: transportation
+        filter:
+          - all
+          - - "!="
+            - brunnel
+            - tunnel
+          - - in
+            - class
+            - minor
+            - service
+            - track
+  - symbol_id:
+    - 502-highway-secondary-tertiary-centerline
+    - 502-highway-secondary-tertiary-casing
+    links:
+      - source: ofm
+        source-layer: transportation
+        filter:
+          - all
+          - - "!="
+            - brunnel
+            - tunnel
+          - - in
+            - class
+            - secondary
+            - tertiary
+  - symbol_id:
+    - 502-highway-primary-centerline
+    - 502-highway-primary-casing
+    links:
+      - source: ofm
+        source-layer: transportation
+        filter:
+          - all
+          - - "!="
+            - brunnel
+            - tunnel
+          - - in
+            - class
+            - primary
+  - symbol_id:
+    - 502-highway-trunk-centerline
+    - 502-highway-trunk-casing
+    links:
+      - source: ofm
+        source-layer: transportation
+        filter:
+          - all
+          - - "!="
+            - brunnel
+            - tunnel
+          - - in
+            - class
+            - trunk
+  - symbol_id:
+    - 502-highway-motorway-centerline
+    - 502-highway-motorway-casing
+    links:
+      - source: ofm
+        source-layer: transportation
+        filter:
+          - all
+          - - "!="
+            - brunnel
+            - tunnel
+          - - in
+            - class
+            - motorway
+  - symbol_id:
+      - 503
+    links:
+
+  - symbol_id: 
+      - 505
+    links:
+      - source: ofm
+        source-layer: transportation
+        filter:
+          - all
+          - - "=="
+            - class
+            - path
+  - symbol_id:
+      - 509-1
+      - 509-2
+    links: 
+      - source: ofm
+        source-layer: transportation
+        filter:
+          - all
+          - - "=="
+            - class
+            - rail
+          - - "!="
+            - brunnel
+            - tunnel
+  - symbol_id:
+      - 520
+    links:
+      - source: ofm
+        source-layer: landuse
+        filter:
+          - in
+          - class
+          - residential
+          - neighbourhood
+          - suburb
+          - commercial
+          - industrial
+          - cemetery
+          - hospital
+          - school
+          - railway
+  - symbol_id:
+      - 521
+    links:
+      - source: ofm
+        source-layer: building
+  - symbol_id:
+      - 522
+    links:
+  - symbol_id:
+      - 532.1
+      - 532.2
+    links:
+
+
+
+

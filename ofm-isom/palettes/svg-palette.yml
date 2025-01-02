@@ -7,10 +7,10 @@ metadata:
 
 svg-palette:
   - id: cultivated-land-pattern
-    file: "../data/images/cultivated-land-pattern.svg"
+    file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles/ofm-isom/images/cultivated-land-pattern.svg"
   - id: sandy-ground-pattern
-    file: "../data/images/sandy-ground-pattern.svg"
+    file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles/ofm-isom/images/sandy-ground-pattern.svg"
   - id: boulder-field-pattern 
-    file: "../data/images/boulder-field-pattern.svg"
+    file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles/ofm-isom/images/boulder-field-pattern.svg"
   - id: marsh-pattern
-    file: "../data/images/marsh-pattern.svg"
+    file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles/ofm-isom/images/marsh-pattern.svg"

@@ -10,10 +10,10 @@ map:
 
 resources:
   design-plan:
-    file: "./design-plan.yml"
+    file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles/ofm-isom/design-plan.yml"
   symbol-palette:
-    file: "./palettes/symbol-palette.yml"
+    file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles/ofm-isom//palettes/symbol-palette.yml"
   color-palette:
-    file: "./palettes/color-palette.yml"
+    file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles/ofm-isom//palettes/color-palette.yml"
   svg-palette:
-    file: "./palettes/svg-palette.yml"
+    file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles/ofm-isom//palettes/svg-palette.yml"

@@ -57,7 +57,7 @@ symbol-palette:
     type: fill
     paint:
       fill-pattern: boulder-field-pattern
-    color-key: lower.yellow_green
+    color-key: lower.white
   - symbol_id: 213
     name: "Sandy ground"
     type: fill

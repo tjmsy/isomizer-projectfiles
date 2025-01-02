@@ -13,6 +13,7 @@ sources:
     type: vector
     tiles:
       - dem-contour://{z}/{x}/{y}?buffer=1&contourLayer=contours&elevationKey=ele&extent=4096&levelKey=level&thresholds=13*5*25~12*10*50~11*50*250~10*100*500~2*200*1000~1*400*2000
+    attribution: Terrain RGB by <a href="https://www.maptiler.com/">MapTiler</a>
 
 rules:
   - symbol_id:

@@ -1,6 +1,6 @@
 project:
-  name: "OpenFreeMap & GSI DEM to ISOM2017-2"
-  description: "OpenFreeMap & GSI DEM to ISOM2017-2"
+  name: "OpenFreeMap to ISOM2017-2"
+  description: "OpenFreeMap to ISOM2017-2"
 
 map:
   center: [0,0]
@@ -10,7 +10,7 @@ map:
 
 resources:
   design-plan:
-    file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles/projects/ofm-gsidem-isom/design-plan.yml"
+    file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles/projects/global-without-contour/design-plan.yml"
   symbol-palette:
     file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles/palettes/isom2017/symbol-palette.yml"
   color-palette:

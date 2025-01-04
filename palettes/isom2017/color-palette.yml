@@ -28,17 +28,10 @@ color-palette:
     - yellow:
         hex: "#FFBA35"
         description: "Yellow for open land"
-  - middle:
-    - black:
-        hex: "#000000"
-        description: "Black for road casing"
-    - brown_50%:
-        hex: "#E8AD80"
-        description: "Brown 50% for road and paved area"
+  - upper:
     - brown:
         hex: "#D25C00"
         description: "Brown for contour lines and land features"
-  - upper:
     - green:
         hex: "#3FFF17"
         description: "Green for point vegetation features"
@@ -48,6 +41,12 @@ color-palette:
     - blue:
         hex: "#00FFFF"
         description: "Blue for water features"
+    - black_casing:
+        hex: "#000000"
+        description: "Black for road casing"
+    - brown_50%:
+        hex: "#E8AD80"
+        description: "Brown 50% for road and paved area"
     - black_25%:
         hex: "#BFBFBF"
         description: "Black 25% for bare rock"

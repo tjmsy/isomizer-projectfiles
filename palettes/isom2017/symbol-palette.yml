@@ -28,7 +28,7 @@ symbol-palette:
         - 1
         - 1
         - 0.56
-    color-key: middle.brown
+    color-key: upper.brown
   - symbol_id: 102
     name: "Index contour"
     type: line
@@ -36,7 +36,7 @@ symbol-palette:
       line-join: round
       line-cap: round
     paint:
-    color-key: middle.brown
+    color-key: upper.brown
     line-width(mm): 0.38
   - symbol_id: 202
     name: "Cliff"
@@ -207,7 +207,7 @@ symbol-palette:
     name: "Paved area"
     type: fill
     paint:
-    color-key: middle.brown_50%
+    color-key: upper.brown_50%
   - symbol_id: 502-1
     name: "Center line: Wide road"
     type: line
@@ -215,7 +215,7 @@ symbol-palette:
       line-join: miter
       line-cap: butt
     paint:
-    color-key: middle.brown_50%
+    color-key: upper.brown_50%
     line-width(mm): 0.45
   - symbol_id: 502-2
     name: "Frame: Wide road"
@@ -243,7 +243,7 @@ symbol-palette:
         - 1
         - 17
         - 10
-    color-key: middle.brown_50%
+    color-key: upper.brown_50%
   - symbol_id: 502-aeroway-taxiway-casing
     name: "Frame: Wide road"
     type: line
@@ -260,7 +260,7 @@ symbol-palette:
         - 2
         - 17
         - 12
-    color-key: middle.black
+    color-key: upper.black_casing
   - symbol_id: 502-aeroway-runway-centerline
     name: "Center line: Wide road"
     type: line
@@ -277,7 +277,7 @@ symbol-palette:
         - 4
         - 17
         - 50
-    color-key: middle.brown_50%
+    color-key: upper.brown_50%
   - symbol_id: 502-aeroway-runway-casing
     name: "Frame: Wide road"
     type: line
@@ -294,7 +294,7 @@ symbol-palette:
         - 5
         - 17
         - 55
-    color-key: middle.black
+    color-key: upper.black_casing
   - symbol_id: 502-highway-minor-centerline
     name: "Center line: Wide road"
     type: line
@@ -313,7 +313,7 @@ symbol-palette:
         - 2.5
         - 20
         - 12.5
-    color-key: middle.brown_50%
+    color-key: upper.brown_50%
   - symbol_id: 502-highway-minor-casing
     name: "Frame: Wide road"
     type: line
@@ -334,7 +334,7 @@ symbol-palette:
         - 3.5
         - 20
         - 14
-    color-key: middle.black
+    color-key: upper.black_casing
   - symbol_id: 502-highway-secondary-tertiary-centerline
     name: "Center line: Wide road"
     type: line
@@ -353,7 +353,7 @@ symbol-palette:
         - 0.5
         - 20
         - 13
-    color-key: middle.brown_50%
+    color-key: upper.brown_50%
   - symbol_id: 502-highway-secondary-tertiary-casing
     name: "Frame: Wide road"
     type: line
@@ -370,7 +370,7 @@ symbol-palette:
         - 1.5
         - 20
         - 17
-    color-key: middle.black
+    color-key: upper.black_casing
   - symbol_id: 502-highway-primary-centerline
     name: "Center line: Wide road"
     type: line
@@ -389,7 +389,7 @@ symbol-palette:
         - 0.5
         - 20
         - 18
-    color-key: middle.brown_50%
+    color-key: upper.brown_50%
   - symbol_id: 502-highway-primary-casing
     name: "Frame: Wide road"
     type: line
@@ -410,7 +410,7 @@ symbol-palette:
         - 1.5
         - 20
         - 22
-    color-key: middle.black
+    color-key: upper.black_casing
   - symbol_id: 502-highway-trunk-centerline
     name: "Center line: Wide road"
     type: line
@@ -429,7 +429,7 @@ symbol-palette:
         - 0.5
         - 20
         - 18
-    color-key: middle.brown_50%
+    color-key: upper.brown_50%
   - symbol_id: 502-highway-trunk-casing
     name: "Frame: Wide road"
     type: line
@@ -450,7 +450,7 @@ symbol-palette:
         - 1.5
         - 20
         - 22
-    color-key: middle.black
+    color-key: upper.black_casing
   - symbol_id: 502-highway-motorway-centerline
     name: "Center line: Wide road"
     type: line
@@ -469,7 +469,7 @@ symbol-palette:
         - 0.5
         - 20
         - 18
-    color-key: middle.brown_50%
+    color-key: upper.brown_50%
   - symbol_id: 502-highway-motorway-casing
     name: "Frame: Wide road"
     type: line
@@ -492,7 +492,7 @@ symbol-palette:
         - 1.5
         - 20
         - 22
-    color-key: middle.black
+    color-key: upper.black_casing
   - symbol_id: 503
     name: "Road"
     type: line

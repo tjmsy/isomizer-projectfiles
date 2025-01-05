@@ -1,10 +1,3 @@
-metadata:
-  # Add custom information about the file, such as:
-  #   author: "Creator's name"
-  #   created-date: "YYYY-MM-DD"
-  #   project-name: "Project name"
-  design-plan-name: "Design Plan: ISOMized Japan"
-
 sources:
   ofm:
     type: vector
@@ -14,6 +7,7 @@ sources:
     attribution: "<a href='https://maps.gsi.go.jp/development/vt.html'>国土地理院ベクトルタイル</a>"
     tiles:
       - "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/{z}/{x}/{y}.pbf"
+    maxzoom: 16
   contour-source:
     type: vector
     tiles:
@@ -63,38 +57,48 @@ rules:
   - symbol_id:
       - 301
     links:
-      - source: ofm
-        source-layer: water
+      - source: gsivt
+        source-layer: waterarea
   - symbol_id:
       - 301-1
     links:
-  - symbol_id:
-      - 304-river
-    links:
-      - source: ofm
-        source-layer: waterway
+      - source: gsivt
+        source-layer: coastline
         filter:
-          - all
-          - - "!in"
-            - brunnel
-            - tunnel
-          - - "in"
-            - class
-            - river
-  - symbol_id:
-      - 304-stream
-    links:
-      - source: ofm
-        source-layer: waterway
+      - source: gsivt
+        source-layer: river
         filter:
-          - all
-          - - "!in"
-            - brunnel
-            - tunnel
-          - - in
-            - class
-            - stream
-            - canal
+          - in
+          - ftCode
+          - 5201
+          - 5202
+          - 5203
+      - source: gsivt
+        source-layer: lake
+        filter:
+          - in
+          - ftCode
+          - 5231
+          - 5232
+          - 5233
+  - symbol_id:
+      - 304
+    links:
+      - source: gsivt
+        source-layer: river
+        filter:
+          - in
+          - ftCode
+          - 5301
+  - symbol_id:
+      - 306
+    links:
+      - source: gsivt
+        source-layer: river
+        filter:
+          - in
+          - ftCode
+          - 5302
   - symbol_id:
       - 307
     links:

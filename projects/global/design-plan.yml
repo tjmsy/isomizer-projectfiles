@@ -15,6 +15,11 @@ rules:
       - source:
       - source-layer:
   - symbol_id:
+      - 101
+    links:
+      - source: contour-source
+        source-layer: contours
+  - symbol_id:
       - 208-boulder-field
     links:
       - source: ofm

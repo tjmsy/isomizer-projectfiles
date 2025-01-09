@@ -15,7 +15,7 @@ rules:
       - source:
       - source-layer:
   - symbol_id:
-      - 101
+      - 101-contour
     links:
       - source: contour-source
         source-layer: contours

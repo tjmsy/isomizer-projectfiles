@@ -28,6 +28,9 @@ color-palette:
     - green:
         hex: "#3FFF17"
         description: "Green for point vegetation features"
+    - black_water_boundary:
+        hex: "#000000"
+        description: "Black for water boundary"
     - blue_50%:
         hex: "#4DFFFF"
         description: "Blue for shallow water"

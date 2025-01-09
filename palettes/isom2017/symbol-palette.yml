@@ -64,8 +64,8 @@ symbol-palette:
       line-cap: butt
     paint:
     property:
-      color-key: upper.black
-      line-width(mm): 0.27
+      color-key: upper.black_water_boundary
+      line-width(mm): 0.54
   - symbol_id: 302-shallow-water
     type: fill
     paint:

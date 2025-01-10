@@ -11,7 +11,7 @@ sources:
   contour-source:
     type: vector
     tiles:
-      - dem-contour://{z}/{x}/{y}?buffer=1&contourLayer=contours&elevationKey=ele&extent=4096&levelKey=level&thresholds=13*5*25~12*10*50~11*50*250~10*100*500~2*200*1000~1*400*2000
+      - dem-contour://{z}/{x}/{y}?buffer=1&contourLayer=contours&elevationKey=ele&extent=4096&levelKey=level&thresholds=14*5*25~13*10*50~12*20*100~11*40*200~10*80*400~9*160*800~8*320*1600~7*640*3200~6*1280*6400*2560*12800
     attribution: <a href='https://maps.gsi.go.jp/development/ichiran.html#dem' target='_blank'>標高タイル</a>
   fude:
     type: vector

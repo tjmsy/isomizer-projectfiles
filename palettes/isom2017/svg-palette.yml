@@ -1,9 +1,9 @@
 svg-palette:
   - id: cultivated-land-pattern
-    file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles/ofm-isom/images/cultivated-land-pattern.svg"
+    file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles/images/isom2017/cultivated-land-pattern.svg"
   - id: sandy-ground-pattern
-    file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles/ofm-isom/images/sandy-ground-pattern.svg"
+    file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles/images/isom2017/sandy-ground-pattern.svg"
   - id: boulder-field-pattern 
-    file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles/ofm-isom/images/boulder-field-pattern.svg"
+    file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles/images/isom2017/boulder-field-pattern.svg"
   - id: marsh-pattern
-    file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles/ofm-isom/images/marsh-pattern.svg"
+    file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles/images/isom2017/marsh-pattern.svg"

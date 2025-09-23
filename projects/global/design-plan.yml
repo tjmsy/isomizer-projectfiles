@@ -47,9 +47,6 @@ rules:
       - source: ofm
         source-layer: water
   - symbol_id:
-      - 301-1-water-boundary
-    links:
-  - symbol_id:
       - 304-river
     links:
       - source: ofm

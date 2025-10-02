@@ -12,7 +12,7 @@ sources:
     type: vector
     tiles:
       - dem-contour://{z}/{x}/{y}?buffer=1&contourLayer=contours&elevationKey=ele&extent=4096&levelKey=level&thresholds=14*5*25~13*10*50~12*20*100~11*40*200~10*80*400~9*160*800~8*320*1600~7*640*3200~6*1280*6400*2560*12800
-    attribution: <a href='https://tiles.gsj.jp/tiles/elev/tiles.html#h_mixed' target='_blank'>産総研 シームレス標高タイル(統合DEM)</a>
+    attribution: <a href='https://tiles.gsj.jp/tiles/elev/tiles.html#h_land' target='_blank'>産総研 シームレス標高タイル(陸域統合DEM)</a>
   fude:
     type: vector
     attribution: "<a href='https://github.com/optgeo/ag?tab=readme-ov-file#%E5%87%BA%E5%85%B8' target='_blank'>筆ポリゴン(農林水産省)</a>"

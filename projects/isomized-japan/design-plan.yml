@@ -55,6 +55,15 @@ rules:
           - class
           - sand
   - symbol_id:
+      - 214-bare-rock
+    links:
+      - source: ofm
+        source-layer: landcover
+        filter:
+          - "=="
+          - subclass
+          - bare_rock
+  - symbol_id:
       - 301-uncrossable-water
     links:
       - source: gsivt
@@ -118,7 +127,7 @@ rules:
           - all
           - - in
             - class
-            - meadow
+            - grass
           - - "!="
             - subclass
             - golf_course
@@ -128,6 +137,21 @@ rules:
           - - "!="
             - subclass
             - park
+          - - "!="
+            - subclass
+            - garden
+          - - "!="
+            - subclass
+            - meadow
+          - - "!="
+            - subclass
+            - grassland
+          - - "!="
+            - subclass
+            - heath
+          - - "!="
+            - subclass
+            - logging
   - symbol_id:
       - 403-rough-open-land
     links:
@@ -135,7 +159,8 @@ rules:
         source-layer: landcover
         filter:
           - in
-          - class
+          - subclass
+          - meadow
           - grassland
           - heath
           - logging
@@ -151,6 +176,7 @@ rules:
             - forest
             - wood
             - park
+            - tree
           - - in
             - subclass
             - park
@@ -182,6 +208,7 @@ rules:
           - class
           - pitch
           - track
+          - playground
   - symbol_id:
       - 502-1-aeroway-taxiway-center
       - 502-2-aeroway-taxiway-outline
@@ -287,6 +314,9 @@ rules:
           - - "=="
             - class
             - path
+          - - "!in"
+            - brunnel
+            - tunnel
   - symbol_id:
       - 509-1-railway-center
       - 509-2-railway-outline
@@ -318,6 +348,9 @@ rules:
           - hospital
           - school
           - railway
+          - retail
+          - military
+          - quarter
   - symbol_id:
       - 521-building
     links:

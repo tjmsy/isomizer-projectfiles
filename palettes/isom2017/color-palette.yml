@@ -49,12 +49,18 @@ color-palette:
     - black_20%:
         hex: "#CCCCCC"
         description: "Black 20% for canopy"
-    - black_65%:
-        hex: "#595959"
-        description: "Black 65% for building and stairway"
     - black:
         hex: "#000000"
         description: "Black for black map symbols"
+    - black_stairway:
+        hex: "#595959"
+        description: "Black 65% for stairway"
+    - white_stairway:
+        hex: "#FFFFFF"
+        description: "White for stairway"
+    - black_65%:
+        hex: "#595959"
+        description: "Black 65% for building"
     - white:
         hex: "#FFFFFF"
         description: "White for railway"

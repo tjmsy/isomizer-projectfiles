@@ -171,10 +171,19 @@ rules:
         source-layer: landcover
         filter:
           - in
-          - class
+          - subclass
           - farm
           - farmland
-          - crop
+  - symbol_id:
+      - 413-orchard
+    links:
+      - source: ofm
+        source-layer: landcover
+        filter:
+          - in
+          - subclass
+          - orchard
+          - vineyard
   - symbol_id:
       - 501-paved-area
     links:

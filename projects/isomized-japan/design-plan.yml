@@ -256,7 +256,6 @@ rules:
             - class
             - minor
             - service
-            - track
   - symbol_id:
       - 502-1-highway-secondary-tertiary-center
       - 502-2-highway-secondary-tertiary-outline
@@ -314,6 +313,19 @@ rules:
           - - in
             - class
             - motorway
+  - symbol_id:
+      - 504-vehicle-track
+    links:
+      - source: ofm
+        source-layer: transportation
+        filter:
+          - all
+          - - "=="
+            - class
+            - track
+          - - "!in"
+            - brunnel
+            - tunnel
   - symbol_id:
       - 505-footpath
     links:

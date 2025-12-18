@@ -1,11 +1,11 @@
 svg-palette:
   - id: cultivated-land-pattern
-    file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles/images/isom2017/cultivated-land-pattern.svg"
+    url: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles/images/isom2017/cultivated-land-pattern.svg"
   - id: sandy-ground-pattern
-    file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles/images/isom2017/sandy-ground-pattern.svg"
+    url: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles/images/isom2017/sandy-ground-pattern.svg"
   - id: boulder-field-pattern 
-    file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles/images/isom2017/boulder-field-pattern.svg"
+    url: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles/images/isom2017/boulder-field-pattern.svg"
   - id: marsh-pattern
-    file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles/images/isom2017/marsh-pattern.svg"
+    url: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles/images/isom2017/marsh-pattern.svg"
   - id: orchard-pattern
-    file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles/images/isom2017/orchard-pattern.svg"
+    url: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles/images/isom2017/orchard-pattern.svg"

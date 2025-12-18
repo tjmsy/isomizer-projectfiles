@@ -7,3 +7,5 @@ svg-palette:
     file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles/images/isom2017/boulder-field-pattern.svg"
   - id: marsh-pattern
     file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles/images/isom2017/marsh-pattern.svg"
+  - id: orchard-pattern
+    file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles/images/isom2017/orchard-pattern.svg"

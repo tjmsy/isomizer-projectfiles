@@ -166,7 +166,7 @@ symbol-palette:
     paint:
     property:
       color-key: lower.green_60%
-  - symbol_id: 410-veetation-fight
+  - symbol_id: 410-vegetation-fight
     type: fill
     paint:
     property:
@@ -175,6 +175,12 @@ symbol-palette:
     type: fill
     paint:
       fill-pattern: cultivated-land-pattern
+    property:
+      color-key: lower.yellow
+  - symbol_id: 413-orchard
+    type: fill
+    paint:
+      fill-pattern: orchard-pattern
     property:
       color-key: lower.yellow
   - symbol_id: 415-distinct-cultivation-boundary

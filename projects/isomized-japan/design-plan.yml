@@ -199,6 +199,16 @@ rules:
       - source: fude
         source-layer: farmland
   - symbol_id:
+      - 413-orchard
+    links:
+      - source: ofm
+        source-layer: landcover
+        filter:
+          - in
+          - subclass
+          - orchard
+          - vineyard
+  - symbol_id:
       - 501-paved-area
     links:
       - source: ofm

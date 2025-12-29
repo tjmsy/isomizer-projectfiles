@@ -2,18 +2,12 @@ project:
   name: "ISOMized Japan"
   description: "Hybrid style for Japan orienteering map"
 
-map:
-  center: [0,0]
-  zoom: 1
-  bearing: 0
-  pitch: 0
-
 resources:
   design-plan:
-    file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles/projects/isomized-japan/design-plan.yml"
+    file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles@0.3/projects/isomized-japan/design-plan.yml"
   symbol-palette:
-    file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles/palettes/isom2017/symbol-palette.yml"
+    file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles@0.3/palettes/isom2017/symbol-palette.yml"
   color-palette:
-    file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles/palettes/isom2017/color-palette.yml"
-  svg-palette:
-    file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles/palettes/isom2017/svg-palette.yml"
+    file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles@0.3/palettes/isom2017/color-palette.yml"
+  image-palette:
+    file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles@0.3/palettes/isom2017/image-palette.yml"

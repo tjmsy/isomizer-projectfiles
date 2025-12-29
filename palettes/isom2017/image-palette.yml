@@ -1,4 +1,4 @@
-svg-palette:
+image-palette:
   - id: cultivated-land-pattern
     url: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles/images/isom2017/cultivated-land-pattern.svg"
   - id: sandy-ground-pattern

@@ -1,7 +1,11 @@
 project:
-  name: "OpenFreeMap to ISOM2017-2"
+  name: "OriLibre - Global"
   description: "OpenFreeMap to ISOM2017-2"
-
+map:
+  center: [0, 0]
+  zoom: 1
+  bearing: 0
+  pitch: 0
 resources:
   design-plan:
     file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles@0.3/projects/global/design-plan.yml"

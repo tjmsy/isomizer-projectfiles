@@ -1,7 +1,11 @@
 project:
-  name: "ISOMized Japan"
+  name: "OriLibre - Japan"
   description: "Hybrid style for Japan orienteering map"
-
+map:
+  center: [139.3127,35.8855]
+  zoom: 15
+  bearing: 0
+  pitch: 0
 resources:
   design-plan:
     file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles@0.3/projects/isomized-japan/design-plan.yml"

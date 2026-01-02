@@ -19,9 +19,6 @@ sources:
 rules:
   - symbol_id:
       - background
-    links:
-      - source:
-      - source-layer:
   - symbol_id:
       - 101-contour
     links:

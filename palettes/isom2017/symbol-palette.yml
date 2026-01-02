@@ -1,11 +1,8 @@
 symbol-palette:
   - symbol_id: background
     type: background
-    minzoom: 8
-    paint:
-      background-color: "#9BBB1D"
     property:
-      color-key: lower.yellow_green
+      color-key: lower.background
   - symbol_id: 101-contour
     type: line
     layout:
@@ -40,13 +37,13 @@ symbol-palette:
     paint:
       fill-pattern: boulder-field-pattern
     property:
-      color-key: lower.white
+      color-key: lower.placeholder_boulder-field-pattern
   - symbol_id: 213-sandy-ground
     type: fill
     paint:
       fill-pattern: sandy-ground-pattern
     property:
-      color-key: lower.yellow_50%
+      color-key: placeholder_sandy-ground-pattern
   - symbol_id: 214-bare-rock
     type: fill
     paint:
@@ -140,7 +137,7 @@ symbol-palette:
     paint:
       fill-pattern: marsh-pattern
     property:
-      color-key: upper.blue
+      color-key: upper.placeholder_marsh-pattern
   - symbol_id: 401-open-land
     type: fill
     paint:
@@ -176,13 +173,13 @@ symbol-palette:
     paint:
       fill-pattern: cultivated-land-pattern
     property:
-      color-key: lower.yellow
+      color-key: lower.placeholder_cultivated-land-pattern
   - symbol_id: 413-orchard
     type: fill
     paint:
       fill-pattern: orchard-pattern
     property:
-      color-key: lower.yellow
+      color-key: lower.placeholder_orchard-pattern
   - symbol_id: 415-distinct-cultivation-boundary
     type: line
     layout:
@@ -197,6 +194,12 @@ symbol-palette:
     paint:
     property:
       color-key: upper.brown_50%
+  - symbol_id: 501-paved-area-casing
+    type: line
+    paint:
+    property:
+      color-key: upper.black_casing
+      line-width(mm): 0.5
   - symbol_id: 502-1-wide-road-center
     type: line
     layout:
@@ -511,7 +514,7 @@ symbol-palette:
       line-cap: butt
     paint:
     property:
-      color-key: upper.black
+      color-key: upper.black_footpath
       line-width(mm): 0.38
       line-dasharray(mm):
         - 3

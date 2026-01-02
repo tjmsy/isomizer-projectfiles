@@ -1,11 +1,16 @@
 color-palette:
   - lower:
+    - background:
+        hex: "#9BBB1D"
+        description: "Yellow green for background"
     - yellow_green:
         hex: "#9BBB1D"
         description: "Yellow green for out-of-bounds area"
     - white:
         hex: "#FFFFFF"
         description: "White for forest"
+    - placeholder_boulder-field-pattern:
+        description: "placeholder for sorting"
     - green_30%:
         hex: "#C5FFC4"
         description: "Green 30% for vegetation, slow running"
@@ -18,9 +23,15 @@ color-palette:
     - yellow_50%:
         hex: "#FFDD9A"
         description: "Yellow 50% for rough open land"
+    - placeholder_sandy-ground-pattern:
+        description: "placeholder for sorting"
     - yellow:
         hex: "#FFBA35"
         description: "Yellow for open land"
+    - placeholder_cultivated-land-pattern:
+        description: "placeholder for sorting"
+    - placeholder_orchard-pattern:
+        description: "placeholder for sorting"
   - upper:
     - brown:
         hex: "#D25C00"
@@ -37,9 +48,14 @@ color-palette:
     - blue:
         hex: "#00FFFF"
         description: "Blue for water features"
+    - placeholder_marsh-pattern:
+        description: "placeholder for sorting"
     - black_casing:
         hex: "#000000"
         description: "Black for road casing"
+    - black_footpath:
+        hex: "#000000"
+        description: "Black for footpath"
     - brown_50%:
         hex: "#E8AD80"
         description: "Brown 50% for road and paved area"

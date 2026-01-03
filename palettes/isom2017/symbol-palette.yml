@@ -43,7 +43,7 @@ symbol-palette:
     paint:
       fill-pattern: sandy-ground-pattern
     property:
-      color-key: placeholder_sandy-ground-pattern
+      color-key: lower.placeholder_sandy-ground-pattern
   - symbol_id: 214-bare-rock
     type: fill
     paint:

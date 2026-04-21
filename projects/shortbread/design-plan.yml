@@ -123,6 +123,7 @@ rules:
             - kind
             - grass
             - playground
+            - recreation_ground
   - symbol_id:
       - 403-rough-open-land
     links:

@@ -1,10 +1,11 @@
 sources:
   shortbread:
     type: vector
+    attribution: "<a href='https://www.openstreetmap.org/copyright' target='_blank'>OpenStreetMap</a>"
     tiles:
       - https://vector.openstreetmap.org/shortbread_v1/{z}/{x}/{y}.mvt
     maxzoom: 14
-
+	
 rules:
   - symbol_id:
       - background

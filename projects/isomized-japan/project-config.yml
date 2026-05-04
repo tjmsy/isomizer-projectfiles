@@ -1,4 +1,5 @@
 project:
+  id: "hybrid-japan"
   name: "OriLibre - Japan"
   description: "Hybrid style for Japan orienteering map"
 map:

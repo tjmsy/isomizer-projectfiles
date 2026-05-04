@@ -1,4 +1,5 @@
 project:
+  id: "ofm"
   name: "OriLibre - Global"
   description: "OpenFreeMap to ISOM2017-2"
 map:

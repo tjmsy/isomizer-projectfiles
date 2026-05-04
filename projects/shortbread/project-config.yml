@@ -1,4 +1,5 @@
 project:
+  id: "shortbread"
   name: "OriLibre - Shortbread"
   description: "Using OpenStreetMap Shortbread"
 map:

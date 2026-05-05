@@ -131,6 +131,19 @@ rules:
           - heath
           - logging
   - symbol_id:
+      - park
+    links:
+      - source: ofm
+        source-layer: landcover
+        filter:
+          - any
+          - - in
+            - class
+            - park
+          - - in
+            - subclass
+            - park
+  - symbol_id:
       - 405-forest
     links:
       - source: ofm
@@ -141,11 +154,7 @@ rules:
             - class
             - forest
             - wood
-            - park
             - tree
-          - - in
-            - subclass
-            - park
   - symbol_id:
       - 408-vegetation-walk
     links:

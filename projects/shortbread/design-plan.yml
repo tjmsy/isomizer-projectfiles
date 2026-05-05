@@ -5,7 +5,7 @@ sources:
     tiles:
       - https://vector.openstreetmap.org/shortbread_v1/{z}/{x}/{y}.mvt
     maxzoom: 14
-	
+
 rules:
   - symbol_id:
       - background
@@ -137,6 +137,17 @@ rules:
           - grassland
           - heath
   - symbol_id:
+      - park
+    links:
+      - source: shortbread
+        source-layer: land
+        filter:
+          - in
+          - kind
+          - park
+          - village_green
+          - garden
+  - symbol_id:
       - 405-forest
     links:
       - source: shortbread
@@ -145,9 +156,6 @@ rules:
           - in
           - kind
           - forest
-          - park
-          - village_green
-          - garden
   - symbol_id:
       - 408-vegetation-walk
     links:
@@ -209,6 +217,13 @@ rules:
           - - "!="
             - kind
             - groyne
+      - source: shortbread
+        source-layer: sites
+        filter:
+          - in
+          - kind
+          - parking
+          - bicycle_parking
   - symbol_id:
       - 502-1-aeroway-taxiway-center
       - 502-2-aeroway-taxiway-outline
@@ -369,8 +384,6 @@ rules:
           - school
           - hospital
           - prison
-          - parking
-          - bicycle_parking
           - construction
       - source: shortbread
         source-layer: land

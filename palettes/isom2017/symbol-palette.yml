@@ -148,6 +148,11 @@ symbol-palette:
     paint:
     property:
       color-key: lower.yellow_50%
+  - symbol_id: park
+    type: fill
+    paint:
+    property:
+      color-key: lower.white
   - symbol_id: 405-forest
     type: fill
     paint:

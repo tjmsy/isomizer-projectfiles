@@ -1,6 +1,7 @@
 symbol-palette:
   - symbol_id: background
     type: background
+    minzoom: 8
     property:
       color-key: lower.background
   - symbol_id: 101-contour
@@ -571,6 +572,7 @@ symbol-palette:
       line-width(mm): 0.7
   - symbol_id: 520-out-of-bounds
     type: fill
+    minzoom: 8
     paint:
     property:
       color-key: lower.yellow_green

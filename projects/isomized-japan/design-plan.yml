@@ -4,7 +4,7 @@ sources:
     url: https://tiles.openfreemap.org/planet
   gsivt:
     type: vector
-    attribution: "<a href='https://maps.gsi.go.jp/development/vt.html'>国土地理院ベクトルタイル</a>"
+    attribution: "<a href='https://maps.gsi.go.jp/development/vt.html' target='_blank'>国土地理院ベクトルタイル</a>"
     tiles:
       - "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/{z}/{x}/{y}.pbf"
     maxzoom: 16

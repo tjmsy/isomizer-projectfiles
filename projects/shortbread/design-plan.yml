@@ -11,7 +11,7 @@ rules:
   - symbol_id:
       - hillshade
     links:
-      - source: hillshade-source
+      - source: terrain
   - symbol_id:
       - 101-contour
     links:

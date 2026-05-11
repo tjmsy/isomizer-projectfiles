@@ -5,10 +5,13 @@ sources:
     tiles:
       - https://vector.openstreetmap.org/shortbread_v1/{z}/{x}/{y}.mvt
     maxzoom: 14
-
 rules:
   - symbol_id:
       - background
+  - symbol_id:
+      - hillshade
+    links:
+      - source: hillshade-source
   - symbol_id:
       - 101-contour
     links:

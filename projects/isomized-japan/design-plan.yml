@@ -15,10 +15,13 @@ sources:
       - "https://optgeo.github.io/ag-tiles/zxy/{z}/{x}/{y}.pbf"
     minzoom: 11
     maxzoom: 13
-
 rules:
   - symbol_id:
       - background
+  - symbol_id:
+      - hillshade
+    links:
+      - source: hillshade-source
   - symbol_id:
       - 101-contour
     links:

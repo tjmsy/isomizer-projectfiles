@@ -2,10 +2,13 @@ sources:
   ofm:
     type: vector
     url: https://tiles.openfreemap.org/planet
-
 rules:
   - symbol_id:
       - background
+  - symbol_id:
+      - hillshade
+    links:
+      - source: hillshade-source
   - symbol_id:
       - 101-contour
     links:

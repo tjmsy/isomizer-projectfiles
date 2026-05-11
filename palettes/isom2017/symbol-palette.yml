@@ -4,6 +4,12 @@ symbol-palette:
     minzoom: 8
     property:
       color-key: lower.background
+  - symbol_id: hillshade
+    type: hillshade
+    layout:
+      visibility: none
+    property:
+      color-key: lower.placeholder_hillshade
   - symbol_id: 101-contour
     type: line
     layout:

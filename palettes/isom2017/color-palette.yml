@@ -9,6 +9,8 @@ color-palette:
     - white:
         hex: "#FFFFFF"
         description: "White for forest"
+    - placeholder_hillshade:
+        description: "placeholder for sorting"
     - placeholder_boulder-field-pattern:
         description: "placeholder for sorting"
     - green_30%:

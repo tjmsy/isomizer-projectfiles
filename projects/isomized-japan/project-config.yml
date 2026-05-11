@@ -7,6 +7,7 @@ map:
   zoom: 15
   bearing: 0
   pitch: 0
+  glyphs: https://tiles.openfreemap.org/fonts/{fontstack}/{range}.pbf
 resources:
   design-plan:
     file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles@0.4/projects/isomized-japan/design-plan.yml"

@@ -7,6 +7,7 @@ map:
   zoom: 1
   bearing: 0
   pitch: 0
+  glyphs: https://tiles.versatiles.org/assets/glyphs/{fontstack}/{range}.pbf
 resources:
   design-plan:
     file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles@0.4/projects/shortbread/design-plan.yml"

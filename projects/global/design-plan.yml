@@ -331,9 +331,12 @@ rules:
         source-layer: transportation
         filter:
           - all
-          - - "=="
-            - class
+          - - "in"
+            - subclass
             - rail
+            - tram
+            - light_rail
+            - monorail
           - - "!="
             - brunnel
             - tunnel

@@ -1,10 +1,10 @@
 color-palette:
   - lower:
     - background:
-        hex: "#9BBB1D"
+        hex: "#ACCF20"
         description: "Yellow green for background"
     - yellow_green:
-        hex: "#9BBB1D"
+        hex: "#ACCF20"
         description: "Yellow green for out-of-bounds area"
     - white:
         hex: "#FFFFFF"

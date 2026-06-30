@@ -378,9 +378,22 @@ rules:
           - - "in"
             - subclass
             - rail
-            - tram
             - light_rail
             - monorail
+          - - "!="
+            - brunnel
+            - tunnel
+  - symbol_id:
+      - 509-3-tram-l
+      - 509-3-tram-r
+    links:
+      - source: ofm
+        source-layer: transportation
+        filter:
+          - all
+          - - "in"
+            - subclass
+            - tram
           - - "!="
             - brunnel
             - tunnel

@@ -194,6 +194,7 @@ rules:
           - vineyard
   - symbol_id:
       - 501-paved-area
+      - 501-paved-area-casing
     links:
       - source: ofm
         source-layer: landuse
@@ -203,6 +204,20 @@ rules:
           - pitch
           - track
           - playground
+  - symbol_id:
+      - 501-paved-area-pedestrian
+      - 501-paved-area-pedestrian-casing
+    links:
+      - source: ofm
+        source-layer: transportation
+        filter:
+          - all
+          - - "=="
+            - $type
+            - Polygon
+          - - "!="
+            - subclass
+            - platform
   - symbol_id:
       - 502-1-aeroway-taxiway-center
       - 502-2-aeroway-taxiway-outline

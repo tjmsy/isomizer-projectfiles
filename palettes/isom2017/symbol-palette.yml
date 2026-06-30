@@ -205,7 +205,7 @@ symbol-palette:
     type: fill
     paint:
     property:
-      color-key: upper.brown_50%
+      color-key: upper.brown_30%
   - symbol_id: 501-paved-area-casing
     type: line
     paint:
@@ -219,7 +219,7 @@ symbol-palette:
       line-cap: butt
     paint:
     property:
-      color-key: upper.brown_50%
+      color-key: upper.brown_30%
       line-width(mm): 0.45
   - symbol_id: 502-2-wide-road-outline
     type: line
@@ -247,7 +247,7 @@ symbol-palette:
         - 17
         - 10
     property:
-      color-key: upper.brown_50%
+      color-key: upper.brown_30%
   - symbol_id: 502-2-aeroway-taxiway-outline
     type: line
     layout:
@@ -281,7 +281,7 @@ symbol-palette:
         - 17
         - 50
     property:
-      color-key: upper.brown_50%
+      color-key: upper.brown_30%
   - symbol_id: 502-2-aeroway-runway-outline
     type: line
     layout:
@@ -317,7 +317,7 @@ symbol-palette:
         - 20
         - 12.5
     property:
-      color-key: upper.brown_50%
+      color-key: upper.brown_30%
   - symbol_id: 502-2-highway-minor-outline
     type: line
     layout:
@@ -357,7 +357,7 @@ symbol-palette:
         - 20
         - 13
     property:
-      color-key: upper.brown_50%
+      color-key: upper.brown_30%
   - symbol_id: 502-2-highway-secondary-tertiary-outline
     type: line
     layout:
@@ -393,7 +393,7 @@ symbol-palette:
         - 20
         - 18
     property:
-      color-key: upper.brown_50%
+      color-key: upper.brown_30%
   - symbol_id: 502-2-highway-primary-outline
     type: line
     layout:
@@ -433,7 +433,7 @@ symbol-palette:
         - 20
         - 18
     property:
-      color-key: upper.brown_50%
+      color-key: upper.brown_30%
   - symbol_id: 502-2-highway-trunk-outline
     name: "Frame: Wide road"
     type: line
@@ -486,18 +486,14 @@ symbol-palette:
         - - exponential
           - 1.2
         - - zoom
-        - 4
-        - 0
-        - 5
-        - 0.4
-        - 6
-        - 0.6
+        - 6.5
+        - 2
         - 7
         - 1.5
         - 20
-        - 22
+        - 20
     property:
-      color-key: upper.black_casing
+      color-key: upper.black_motorway_casing
   - symbol_id: 503-road
     type: line
     layout:
@@ -587,6 +583,15 @@ symbol-palette:
     paint:
     property:
       color-key: upper.black_65%
+  - symbol_id: 521-1-building-outline
+    type: line
+    layout:
+      line-join: miter
+      line-cap: butt
+    paint:
+    property:
+      color-key: upper.black
+      line-width(mm): 0.36
   - symbol_id: 522-canopy
     type: fill
     paint:

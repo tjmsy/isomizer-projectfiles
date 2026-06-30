@@ -1,10 +1,10 @@
 color-palette:
   - lower:
     - background:
-        hex: "#ACCF20"
+        hex: "#98B010"
         description: "Yellow green for background"
     - yellow_green:
-        hex: "#ACCF20"
+        hex: "#98B010"
         description: "Yellow green for out-of-bounds area"
     - white:
         hex: "#FFFFFF"
@@ -14,10 +14,10 @@ color-palette:
     - placeholder_boulder-field-pattern:
         description: "placeholder for sorting"
     - green_30%:
-        hex: "#C5FFC4"
+        hex: "#C6F7B5"
         description: "Green 30% for vegetation, slow running"
     - green_60%:
-        hex: "#8AFF74"
+        hex: "#84EF73"
         description: "Green 60% for vegetation, walk"
     - green_100%:
         hex: "#3FFF17"
@@ -25,10 +25,12 @@ color-palette:
     - yellow_50%:
         hex: "#FFDD9A"
         description: "Yellow 50% for rough open land"
+    - placeholder_boulder-field-pattern:
+        description: "placeholder for sorting"
     - placeholder_sandy-ground-pattern:
         description: "placeholder for sorting"
     - yellow:
-        hex: "#FFBA35"
+        hex: "#FFC048"
         description: "Yellow for open land"
     - placeholder_cultivated-land-pattern:
         description: "placeholder for sorting"
@@ -39,7 +41,7 @@ color-palette:
         hex: "#BFBFBF"
         description: "Black 25% for bare rock"
     - brown:
-        hex: "#D25C00"
+        hex: "#BE7A54"
         description: "Brown for contour lines and land features"
     - green:
         hex: "#3FFF17"
@@ -51,7 +53,7 @@ color-palette:
         hex: "#4DFFFF"
         description: "Blue for shallow water"
     - blue:
-        hex: "#00FFFF"
+        hex: "#40E0E0"
         description: "Blue for water features"
     - placeholder_marsh-pattern:
         description: "placeholder for sorting"
@@ -61,8 +63,14 @@ color-palette:
     - black_footpath:
         hex: "#000000"
         description: "Black for footpath"
+    - brown_30%:
+        hex: "#F0C8B0"
+        description: "Brown 50% for road and paved area"
+    - black_motorway_casing:
+        hex: "#000000"
+        description: "Black for motorway casing"
     - brown_50%:
-        hex: "#E8AD80"
+        hex: "#E0A878"
         description: "Brown 50% for road and paved area"
     - black_20%:
         hex: "#CCCCCC"
@@ -80,7 +88,7 @@ color-palette:
         hex: "#FFFFFF"
         description: "White for stairway"
     - black_65%:
-        hex: "#595959"
+        hex: "#787878"
         description: "Black 65% for building"
   - overlay:
     - black:

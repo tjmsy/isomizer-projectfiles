@@ -47,6 +47,7 @@ rules:
           - bare_rock
   - symbol_id:
       - 301-uncrossable-water
+      - 301-1-water-boundary
     links:
       - source: ofm
         source-layer: water
@@ -239,7 +240,6 @@ rules:
             - class
             - minor
             - service
-
   - symbol_id:
       - 502-1-highway-secondary-tertiary-center
       - 502-2-highway-secondary-tertiary-outline
@@ -317,12 +317,21 @@ rules:
         source-layer: transportation
         filter:
           - all
+          - - "!="
+            - $type
+            - Polygon
           - - "=="
             - class
             - path
           - - "!in"
             - brunnel
             - tunnel
+          - - "!="
+            - indoor
+            - 1
+          - - "!="
+            - "subclass"
+            - "platform"
   - symbol_id:
       - 509-1-railway-center
       - 509-2-railway-outline
@@ -362,6 +371,7 @@ rules:
           - quarter
   - symbol_id:
       - 521-building
+      - 521-1-building-outline
     links:
       - source: ofm
         source-layer: building

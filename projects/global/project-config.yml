@@ -10,10 +10,10 @@ map:
   glyphs: https://tiles.openfreemap.org/fonts/{fontstack}/{range}.pbf
 resources:
   design-plan:
-    file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles@0.5/projects/global/design-plan.yml"
+    file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles@0.6/projects/global/design-plan.yml"
   symbol-palette:
-    file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles@0.5/palettes/isom2017/symbol-palette.yml"
+    file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles@0.6/palettes/isom2017/symbol-palette.yml"
   color-palette:
-    file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles@0.5/palettes/isom2017/color-palette.yml"
+    file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles@0.6/palettes/isom2017/color-palette.yml"
   image-palette:
-    file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles@0.5/palettes/isom2017/image-palette.yml"
+    file: "https://cdn.jsdelivr.net/gh/tjmsy/isomizer-projectfiles@0.6/palettes/isom2017/image-palette.yml"

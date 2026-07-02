@@ -211,7 +211,7 @@ symbol-palette:
     paint:
     property:
       color-key: upper.black_casing
-      line-width(mm): 0.5
+      line-width(mm): 0.7
   - symbol_id: 501-paved-area-pedestrian
     type: fill
     paint:
@@ -222,7 +222,7 @@ symbol-palette:
     paint:
     property:
       color-key: upper.black_casing
-      line-width(mm): 0.5
+      line-width(mm): 0.7
   - symbol_id: 502-1-wide-road-center
     type: line
     layout:
@@ -249,14 +249,19 @@ symbol-palette:
       line-cap: butt
     paint:
       line-width:
-        - interpolate
-        - - exponential
-          - 1.5
-        - - zoom
-        - 11
-        - 1
-        - 17
-        - 10
+        stops:
+          - - 14
+            - 0
+          - - 14
+            - 1
+          - - 15
+            - 8
+          - - 16
+            - 12
+          - - 18
+            - 18
+          - - 20
+            - 36
     property:
       color-key: upper.brown_30%
   - symbol_id: 502-2-aeroway-taxiway-outline
@@ -266,14 +271,19 @@ symbol-palette:
       line-cap: butt
     paint:
       line-width:
-        - interpolate
-        - - exponential
-          - 1.5
-        - - zoom
-        - 11
-        - 2
-        - 17
-        - 12
+        stops:
+          - - 14
+            - 1.5
+          - - 14
+            - 2
+          - - 15
+            - 10
+          - - 16
+            - 14
+          - - 18
+            - 20
+          - - 20
+            - 40
     property:
       color-key: upper.black_casing
   - symbol_id: 502-1-aeroway-runway-center
@@ -283,14 +293,23 @@ symbol-palette:
       line-cap: butt
     paint:
       line-width:
-        - interpolate
-        - - exponential
-          - 1.5
-        - - zoom
-        - 11
-        - 4
-        - 17
-        - 50
+        stops:
+          - - 11
+            - 0
+          - - 12
+            - 5
+          - - 13
+            - 8
+          - - 14
+            - 14
+          - - 15
+            - 22
+          - - 16
+            - 38
+          - - 18
+            - 158
+          - - 20
+            - 298
     property:
       color-key: upper.brown_30%
   - symbol_id: 502-2-aeroway-runway-outline
@@ -300,14 +319,23 @@ symbol-palette:
       line-cap: butt
     paint:
       line-width:
-        - interpolate
-        - - exponential
-          - 1.5
-        - - zoom
-        - 11
-        - 5
-        - 17
-        - 55
+        stops:
+          - - 11
+            - 0
+          - - 12
+            - 6
+          - - 13
+            - 9
+          - - 14
+            - 16
+          - - 15
+            - 24
+          - - 16
+            - 40
+          - - 18
+            - 160
+          - - 20
+            - 300
     property:
       color-key: upper.black_casing
   - symbol_id: 502-1-highway-minor-center
@@ -317,16 +345,13 @@ symbol-palette:
       line-cap: butt
     paint:
       line-width:
-        - interpolate
-        - - exponential
-          - 1.2
-        - - zoom
-        - 13.5
-        - 0
-        - 14
-        - 2.5
-        - 20
-        - 12.5
+        stops:
+          - - 14
+            - 0
+          - - 14
+            - 2.5
+          - - 17
+            - 6
     property:
       color-key: upper.brown_30%
   - symbol_id: 502-2-highway-minor-outline
@@ -336,54 +361,105 @@ symbol-palette:
       line-cap: butt
     paint:
       line-width:
-        - interpolate
-        - - exponential
-          - 1.2
-        - - zoom
-        - 12
-        - 0.5
-        - 13
-        - 1
-        - 14
-        - 3.5
-        - 20
-        - 14
+        stops:
+          - - 14
+            - 1.5
+          - - 14
+            - 3.5
+          - - 17
+            - 8
     property:
       color-key: upper.black_casing
-  - symbol_id: 502-1-highway-secondary-tertiary-center
+  - symbol_id: 502-1-highway-secondary-center
     type: line
     layout:
       line-join: miter
       line-cap: butt
     paint:
       line-width:
-        - interpolate
-        - - exponential
-          - 1.2
-        - - zoom
-        - 6.5
-        - 0
-        - 8
-        - 0.5
-        - 20
-        - 13
+        stops:
+          - - 14
+            - 0
+          - - 14
+            - 4
+          - - 16
+            - 6
+          - - 18
+            - 28
+          - - 19
+            - 64
+          - - 20
+            - 130
     property:
       color-key: upper.brown_30%
-  - symbol_id: 502-2-highway-secondary-tertiary-outline
+  - symbol_id: 502-2-highway-secondary-outline
     type: line
     layout:
       line-join: miter
       line-cap: butt
     paint:
       line-width:
-        - interpolate
-        - - exponential
-          - 1.2
-        - - zoom
-        - 8
-        - 1.5
-        - 20
-        - 17
+        stops:
+          - - 14
+            - 1.5
+          - - 14
+            - 5
+          - - 16
+            - 8
+          - - 18
+            - 30
+          - - 19
+            - 68
+          - - 20
+            - 138
+    property:
+      color-key: upper.black_casing
+  - symbol_id: 502-1-highway-tertiary-center
+    type: line
+    layout:
+      line-join: miter
+      line-cap: butt
+    paint:
+      line-width:
+        stops:
+          - - 14
+            - 0
+          - - 14
+            - 5
+          - - 16
+            - 5
+          - - 18
+            - 14
+          - - 18
+            - 24
+          - - 19
+            - 60
+          - - 20
+            - 120
+    property:
+      color-key: upper.brown_30%
+  - symbol_id: 502-2-highway-tertiary-outline
+    type: line
+    layout:
+      line-join: miter
+      line-cap: butt
+    paint:
+      line-width:
+        stops:
+          - - 14
+            - 1.5
+          - - 14
+            - 7
+          - - 16
+            - 7
+          - - 18
+            - 14
+          - - 18
+            - 26
+          - - 19
+            - 64
+          - - 20
+            - 128
     property:
       color-key: upper.black_casing
   - symbol_id: 502-1-highway-primary-center
@@ -393,16 +469,27 @@ symbol-palette:
       line-cap: butt
     paint:
       line-width:
-        - interpolate
-        - - exponential
-          - 1.2
-        - - zoom
-        - 8.5
-        - 0
-        - 9
-        - 0.5
-        - 20
-        - 18
+        stops:
+          - - 6
+            - 0
+          - - 7
+            - 1
+          - - 8
+            - 0
+          - - 9
+            - 1
+          - - 10
+            - 3
+          - - 14
+            - 5
+          - - 16
+            - 10
+          - - 18
+            - 34
+          - - 19
+            - 70
+          - - 20
+            - 140
     property:
       color-key: upper.brown_30%
   - symbol_id: 502-2-highway-primary-outline
@@ -412,59 +499,63 @@ symbol-palette:
       line-cap: butt
     paint:
       line-width:
-        - interpolate
-        - - exponential
-          - 1.2
-        - - zoom
-        - 7
-        - 0
-        - 8
-        - 0.6
-        - 9
-        - 1.5
-        - 20
-        - 22
+        stops:
+          - - 8
+            - 0
+          - - 9
+            - 2
+          - - 10
+            - 4
+          - - 14
+            - 6
+          - - 16
+            - 12
+          - - 18
+            - 36
+          - - 19
+            - 74
+          - - 20
+            - 144
     property:
       color-key: upper.black_casing
-  - symbol_id: 502-1-highway-trunk-center
+  - symbol_id: 502-1-highway-ramp-center
     type: line
     layout:
       line-join: miter
       line-cap: butt
     paint:
       line-width:
-        - interpolate
-        - - exponential
-          - 1.2
-        - - zoom
-        - 6.5
-        - 0
-        - 7
-        - 0.5
-        - 20
-        - 18
+        stops:
+          - - 12
+            - 1
+          - - 14
+            - 2
+          - - 16
+            - 5
+          - - 18
+            - 12
+          - - 20
+            - 38
     property:
       color-key: upper.brown_30%
-  - symbol_id: 502-2-highway-trunk-outline
-    name: "Frame: Wide road"
+  - symbol_id: 502-2-highway-ramp-outline
     type: line
     layout:
       line-join: miter
       line-cap: butt
     paint:
       line-width:
-        - interpolate
-        - - exponential
-          - 1.2
-        - - zoom
-        - 5
-        - 0
-        - 6
-        - 0.6
-        - 7
-        - 1.5
-        - 20
-        - 22
+        stops:
+          - - 12
+            - 2
+          - - 14
+            - 3
+          - - 16
+            - 7
+          - - 18
+            - 14
+          - - 20
+            - 40
     property:
       color-key: upper.black_casing
   - symbol_id: 502-1-highway-motorway-center
@@ -474,16 +565,23 @@ symbol-palette:
       line-cap: butt
     paint:
       line-width:
-        - interpolate
-        - - exponential
-          - 1.2
-        - - zoom
-        - 6.5
-        - 0
-        - 7
-        - 0.5
-        - 20
-        - 18
+        stops:
+          - - 5
+            - 0
+          - - 6
+            - 1
+          - - 10
+            - 4
+          - - 14
+            - 4
+          - - 16
+            - 12
+          - - 18
+            - 36
+          - - 19
+            - 80
+          - - 20
+            - 160
     property:
       color-key: upper.brown_50%
   - symbol_id: 502-2-highway-motorway-outline
@@ -493,16 +591,23 @@ symbol-palette:
       line-cap: butt
     paint:
       line-width:
-        - interpolate
-        - - exponential
-          - 1.2
-        - - zoom
-        - 6.5
-        - 2
-        - 7
-        - 1.5
-        - 20
-        - 20
+        stops:
+          - - 5
+            - 0
+          - - 6
+            - 2
+          - - 10
+            - 6
+          - - 14
+            - 5
+          - - 16
+            - 14
+          - - 18
+            - 38
+          - - 19
+            - 84
+          - - 20
+            - 168
     property:
       color-key: upper.black_motorway_casing
   - symbol_id: 503-road
@@ -609,13 +714,20 @@ symbol-palette:
     paint:
     property:
       color-key: lower.yellow_green
+  - symbol_id: 520-out-of-bounds-pier
+    type: fill
+    paint:
+    property:
+      color-key: upper.yellow_green_over_blue
   - symbol_id: 521-building
     type: fill
+    minzoom: 14
     paint:
     property:
       color-key: upper.black_65%
   - symbol_id: 521-1-building-outline
     type: line
+    minzoom: 14
     layout:
       line-join: miter
       line-cap: butt

@@ -55,6 +55,9 @@ color-palette:
     - blue:
         hex: "#40E0E0"
         description: "Blue for water features"
+    - yellow_green_over_blue:
+        hex: "#98B010"
+        description: "Yellow green for pier"
     - placeholder_marsh-pattern:
         description: "placeholder for sorting"
     - black_casing:

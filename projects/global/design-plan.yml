@@ -218,6 +218,9 @@ rules:
           - - "!="
             - subclass
             - platform
+          - - "!="
+            - class
+            - pier
   - symbol_id:
       - 502-1-aeroway-taxiway-center
       - 502-2-aeroway-taxiway-outline
@@ -251,13 +254,16 @@ rules:
           - - "!="
             - brunnel
             - tunnel
+          - - "!="
+            - ramp
+            - 1
           - - in
             - class
             - minor
             - service
   - symbol_id:
-      - 502-1-highway-secondary-tertiary-center
-      - 502-2-highway-secondary-tertiary-outline
+      - 502-1-highway-secondary-center
+      - 502-2-highway-secondary-outline
     links:
       - source: ofm
         source-layer: transportation
@@ -266,9 +272,28 @@ rules:
           - - "!="
             - brunnel
             - tunnel
+          - - "!="
+            - ramp
+            - 1
           - - in
             - class
             - secondary
+  - symbol_id:
+      - 502-1-highway-tertiary-center
+      - 502-2-highway-tertiary-outline
+    links:
+      - source: ofm
+        source-layer: transportation
+        filter:
+          - all
+          - - "!="
+            - brunnel
+            - tunnel
+          - - "!="
+            - ramp
+            - 1
+          - - in
+            - class
             - tertiary
   - symbol_id:
       - 502-1-highway-primary-center
@@ -281,12 +306,16 @@ rules:
           - - "!="
             - brunnel
             - tunnel
+          - - "!="
+            - ramp
+            - 1
           - - in
             - class
             - primary
+            - trunk
   - symbol_id:
-      - 502-1-highway-trunk-center
-      - 502-2-highway-trunk-outline
+      - 502-1-highway-ramp-center
+      - 502-2-highway-ramp-outline
     links:
       - source: ofm
         source-layer: transportation
@@ -295,9 +324,18 @@ rules:
           - - "!="
             - brunnel
             - tunnel
+          - - "=="
+            - ramp
+            - 1
           - - in
             - class
+            - primary
+            - secondary
+            - tertiary
             - trunk
+            - motorway
+            - minor
+            - service
   - symbol_id:
       - 502-1-highway-motorway-center
       - 502-2-highway-motorway-outline
@@ -309,6 +347,9 @@ rules:
           - - "!="
             - brunnel
             - tunnel
+          - - "!="
+            - ramp
+            - 1
           - - in
             - class
             - motorway

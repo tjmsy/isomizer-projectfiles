@@ -221,6 +221,9 @@ rules:
           - - "!="
             - class
             - pier
+          - - "!="
+            - brunnel
+            - bridge
   - symbol_id:
       - 502-1-aeroway-taxiway-center
       - 502-2-aeroway-taxiway-outline
@@ -438,6 +441,23 @@ rules:
           - retail
           - military
           - quarter
+  - symbol_id:
+      - 520-out-of-bounds-pier
+    links:
+      - source: ofm
+        source-layer: transportation
+        filter:
+          - any
+          - - in
+            - class
+            - pier
+          - - all
+            - - "=="
+              - $type
+              - Polygon
+            - - in
+              - brunnel
+              - bridge
   - symbol_id:
       - 521-building
       - 521-1-building-outline

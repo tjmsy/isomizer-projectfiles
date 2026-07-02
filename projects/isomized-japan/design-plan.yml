@@ -241,6 +241,9 @@ rules:
           - - "!="
             - class
             - pier
+          - - "!="
+            - brunnel
+            - bridge
   - symbol_id:
       - 502-1-aeroway-taxiway-center
       - 502-2-aeroway-taxiway-outline
@@ -464,9 +467,17 @@ rules:
       - source: ofm
         source-layer: transportation
         filter:
-          - in
-          - class
-          - pier
+          - any
+          - - in
+            - class
+            - pier
+          - - all
+            - - "=="
+              - $type
+              - Polygon
+            - - in
+              - brunnel
+              - bridge
   - symbol_id:
       - 521-building
       - 521-1-building-outline

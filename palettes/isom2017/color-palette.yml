@@ -93,6 +93,9 @@ color-palette:
     - black_65%:
         hex: "#787878"
         description: "Black 65% for building"
+    - black_building_outline:
+        hex: "#000000"
+        description: "Black 65% for building outline"
   - overlay:
     - black:
         hex: "#000000"

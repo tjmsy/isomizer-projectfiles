@@ -53,6 +53,7 @@ symbol-palette:
       color-key: lower.placeholder_sandy-ground-pattern
   - symbol_id: 214-bare-rock
     type: fill
+    minzoom: 7
     paint:
     property:
       color-key: upper.black_25%

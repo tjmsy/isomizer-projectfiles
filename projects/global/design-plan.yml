@@ -42,9 +42,10 @@ rules:
       - source: ofm
         source-layer: landcover
         filter:
-          - "=="
+          - in
           - subclass
           - bare_rock
+          - glacier
   - symbol_id:
       - 301-uncrossable-water
       - 301-1-water-boundary

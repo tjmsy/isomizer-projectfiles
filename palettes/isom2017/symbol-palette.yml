@@ -31,7 +31,13 @@ symbol-palette:
       line-join: round
       line-cap: round
     paint:
-      line-width: 0.8
+      line-width:
+        - match
+        - - get
+          - level
+        - 1
+        - 1.2
+        - 0.76
       line-opacity: 0.5
     property:
       color-key: lower.brown_contour-halo

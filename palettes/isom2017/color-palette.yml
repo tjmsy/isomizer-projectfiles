@@ -6,6 +6,9 @@ color-palette:
     - yellow_green:
         hex: "#98B010"
         description: "Yellow green for out-of-bounds area"
+    - brown_contour-halo:
+        hex: "#79492F"
+        description: "White for contour halo"
     - white:
         hex: "#FFFFFF"
         description: "White for forest"

@@ -11,6 +11,7 @@ rules:
       - source: terrain
   - symbol_id:
       - 101-contour
+      - 101-2-contour-halo
     links:
       - source: contour-source
         source-layer: contours

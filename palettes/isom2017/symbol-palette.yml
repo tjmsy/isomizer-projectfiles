@@ -25,6 +25,16 @@ symbol-palette:
         - 0.56
     property:
       color-key: upper.brown
+  - symbol_id: 101-2-contour-halo
+    type: line
+    layout:
+      line-join: round
+      line-cap: round
+    paint:
+      line-width: 0.8
+      line-opacity: 0.5
+    property:
+      color-key: lower.brown_contour-halo
   - symbol_id: 202-cliff
     type: line
     layout:
